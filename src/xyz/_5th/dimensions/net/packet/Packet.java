@@ -1,3 +1,6 @@
+package xyz._5th.dimensions.net.packet;
+
+import io.netty.buffer.ByteBuf;
 
 import java.lang.reflect.Field;
 
@@ -20,7 +23,7 @@ public abstract class Packet {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-        sb.append(" ]");
+        s.append(" ]");
         return s.toString();
     }
 }

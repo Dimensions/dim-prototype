@@ -6,6 +6,7 @@
 package xyz._5th.dimensions.api;
 
 import xyz._5th.dimensions.api.cmd.CommandRegistry;
+import xyz._5th.dimensions.api.world.WorldManager;
 
 /**
  * Project: Dimensions

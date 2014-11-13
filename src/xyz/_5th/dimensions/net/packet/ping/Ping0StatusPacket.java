@@ -1,7 +1,10 @@
+package xyz._5th.dimensions.net.packet.ping;
 
+
+import xyz._5th.dimensions.net.packet.Packet;
 import io.netty.buffer.ByteBuf;
 
-public class Packet0Status extends Packet {
+public class Ping0StatusPacket extends Packet {
 
     public static final String BASE_DATA = "{\"version\":{\"name\":\"${version.name}\",\"protocol\":${version.protocol}},\"players\":{\"max\":${players.max},\"online\":${players.online},\"sample\":[{\"name\":\"Phasesaber\",\"id\":\"e63a1d61-adf1-4d47-b5f8-43efc5c84908\"}]},\"description\":{\"text\": \"${description.text}\"},\"favicon\":\"\"}";
 

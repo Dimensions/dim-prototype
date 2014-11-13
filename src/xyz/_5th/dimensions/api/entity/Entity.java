@@ -7,6 +7,7 @@ package xyz._5th.dimensions.api.entity;
 
 import xyz._5th.dimensions.api.Orientation;
 import xyz._5th.dimensions.api.Position;
+import xyz._5th.dimensions.api.world.World;
 
 /**
  * Project: Dimensions
@@ -35,6 +36,10 @@ public interface Entity {
 	public void mount(Rideable r);
 	public void dismount();
 	
+	public void sendStatus(EntityAnimation animation);
 	
+	public boolean isAlive();
 	
+	public EntityTickManager getTickManager();
+	public void setTickManager(EntityTickManager man);
 }

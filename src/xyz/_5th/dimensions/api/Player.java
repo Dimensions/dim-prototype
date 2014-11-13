@@ -4,6 +4,9 @@
  * Contact me at https://github.com/Phasesaber .
  */
 package xyz._5th.dimensions.api;
+
+import xyz._5th.dimensions.api.entity.Entity;
+
 /**
  * Project: Dimensions
  * 
