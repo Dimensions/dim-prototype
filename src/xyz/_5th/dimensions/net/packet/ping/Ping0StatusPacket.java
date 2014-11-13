@@ -3,7 +3,7 @@ import io.netty.buffer.ByteBuf;
 
 public class Packet0Status extends Packet {
 
-    public static final String BASE_DATA = "{\"version\":{\"name\":\"${version.name}\",\"protocol\":${version.protocol}},\"players\":{\"max\":${players.max},\"online\":${players.online},\"sample\":[{\"name\":\"dreadiscool\",\"id\":\"4566e69f-c907-48ee-8d71-d7ba5aa00d20\"}]},\"description\":{\"text\": \"${description.text}\"},\"favicon\":\"\"}";
+    public static final String BASE_DATA = "{\"version\":{\"name\":\"${version.name}\",\"protocol\":${version.protocol}},\"players\":{\"max\":${players.max},\"online\":${players.online},\"sample\":[{\"name\":\"Phasesaber\",\"id\":\"e63a1d61-adf1-4d47-b5f8-43efc5c84908\"}]},\"description\":{\"text\": \"${description.text}\"},\"favicon\":\"\"}";
 
     public String version;
     public int protocol;
