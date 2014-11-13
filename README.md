@@ -7,9 +7,12 @@ This is a new Minecraft Server that will allow more customization compared to th
 
 Features
 --------
->> Modifiable ServerPing variables, such as Oline Player Count ('which is a string')
->> 1.7 through 1.8 can connect, lower versions won't be supported because of Netty Rewrite(?)
->> Plugin API that has access to all the features of the Server, essentially making it completely hackable.
+> Modifiable ServerPing variables, such as Oline Player Count ('which is a string')
+
+> 1.7 through 1.8 can connect, lower versions won't be supported because of Netty Rewrite(?)
+
+> Plugin API that has access to all the features of the Server, essentially making it completely hackable.
+
 
 Credits
 -------
