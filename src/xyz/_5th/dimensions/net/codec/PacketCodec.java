@@ -3,23 +3,23 @@
  * but that does not mean you own it. 
  * Contact me at https://github.com/Phasesaber .
  */
-package xyz._5th.dimensions.net.packet;
+package xyz._5th.dimensions.net.codec;
 
-import xyz._5th.dimensions.DimPlayer;
+import xyz._5th.dimensions.net.packet.PacketHandler;
 
 /**
  * Project: Dimensions
  * 
- * File: PacketHandler.java
+ * File: PacketCodec.java
  * 
  * @author Phase(Jadon Fowler) on Nov 13, 2014
  */
-public class PacketHandler {
+public class PacketCodec {
 
 	/**
-	 * @param dimPlayer
+	 * @param packetHandler
 	 */
-	public PacketHandler(DimPlayer dimPlayer) {
+	public PacketCodec(PacketHandler packetHandler) {
 		// TODO Auto-generated constructor stub
 	}
 
