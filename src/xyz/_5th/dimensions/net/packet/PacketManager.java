@@ -11,6 +11,9 @@ import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.util.Random;
 
+import xyz._5th.dimensions.DimPlayer;
+import xyz._5th.dimensions.net.packet.handshake.Handshake0HandshakePacket;
+
 /**
  * Project: Dimensions
  * 
