@@ -1,8 +1,9 @@
 package xyz._5th.dimensions.net.packet.ping;
 
-
-import xyz._5th.dimensions.net.packet.Packet;
 import io.netty.buffer.ByteBuf;
+import xyz._5th.dimensions.net.PacketConstants;
+import xyz._5th.dimensions.net.packet.Packet;
+import xyz._5th.dimensions.net.packet.PacketManager;
 
 public class Ping0StatusPacket extends Packet {
 
@@ -10,8 +11,8 @@ public class Ping0StatusPacket extends Packet {
 
     public String version;
     public int protocol;
-    public String maxPlayers;
-    public String onlineCount;
+    public int maxPlayers;
+    public int onlineCount;
     public String description;
 
     public void read(ByteBuf in) throws Exception { }
@@ -26,7 +27,7 @@ public class Ping0StatusPacket extends Packet {
         PacketConstants.writeString(out, preparedResponse);
     }
 
-    public void handle(PacketHandler handler) {
+    public void handle(PacketManager handler) {
         handler.statusRequest(this);
     }
 }

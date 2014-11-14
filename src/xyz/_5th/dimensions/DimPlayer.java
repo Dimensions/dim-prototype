@@ -14,7 +14,7 @@ import xyz._5th.dimensions.api.entity.EntityTickManager;
 import xyz._5th.dimensions.api.entity.Rideable;
 import xyz._5th.dimensions.api.world.World;
 import xyz._5th.dimensions.net.codec.PacketCodec;
-import xyz._5th.dimensions.net.packet.PacketHandler;
+import xyz._5th.dimensions.net.packet.PacketManager;
 
 /**
  * Project: Dimensions
@@ -28,7 +28,7 @@ public class DimPlayer implements Player {
 	public static final String JSONChatMessageBase = "{\"text\":\"[#message]\"";
 	
 	public SocketChannel channel;
-	public PacketHandler packetHandler;
+	public PacketManager packetManager;
 	public PacketCodec packetCodec;
 	public String uuid;
 	public String username;
@@ -48,8 +48,8 @@ public class DimPlayer implements Player {
 	
 	public DimPlayer(SocketChannel channel){
 		this.channel = channel;
-		this.packetHandler = new PacketHandler(this);
-		this.packetCodec = new PacketCodec(this.packetHandler);
+		this.packetManager = new PacketManager(this);
+		this.packetCodec = new PacketCodec(this.packetManager);
 	}
 
 	/* (non-Javadoc)

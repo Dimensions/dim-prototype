@@ -13,6 +13,9 @@ import java.util.Random;
 
 import xyz._5th.dimensions.DimPlayer;
 import xyz._5th.dimensions.net.packet.handshake.Handshake0HandshakePacket;
+import xyz._5th.dimensions.net.packet.login.Login0LoginStartPacket;
+import xyz._5th.dimensions.net.packet.login.Login1EncryptionPacket;
+import xyz._5th.dimensions.net.packet.ping.Ping0StatusPacket;
 
 /**
  * Project: Dimensions
@@ -52,5 +55,17 @@ public class PacketManager {
 	
 	public void handshake(Handshake0HandshakePacket packet){
 		
+	}
+	
+	public void loginStart(Login0LoginStartPacket packet){
+		
+	}
+
+	public void startEncryption(Login1EncryptionPacket packet) {
+		
+	}
+	
+	public void statusRequest(Ping0StatusPacket packet) {
+			
 	}
 }

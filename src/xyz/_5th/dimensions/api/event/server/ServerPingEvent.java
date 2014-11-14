@@ -18,8 +18,8 @@ public class ServerPingEvent implements Event {
 	
 	private String versionName;
 	private int protocol;
-	private String onlinePlayers;
-	private String maxPlayers;
+	private int onlinePlayers;
+	private int maxPlayers;
 	private String motd;
 	/**
 	 * @param versionName
@@ -29,7 +29,7 @@ public class ServerPingEvent implements Event {
 	 * @param motd
 	 */
 	public ServerPingEvent(String versionName, int protocol,
-			String onlinePlayers, String maxPlayers, String motd) {
+			int onlinePlayers, int maxPlayers, String motd) {
 		super();
 		this.versionName = versionName;
 		this.protocol = protocol;
@@ -69,28 +69,28 @@ public class ServerPingEvent implements Event {
 	 * Getter for onlinePlayers.
 	 * @return Gets onlinePlayers.
 	 */
-	public String getOnlinePlayers() {
+	public int getOnlinePlayers() {
 		return onlinePlayers;
 	}
 	/**
 	 * Setter for ${bare_field_name}.
 	 * @param Set onlinePlayers to onlinePlayers.
 	 */
-	public void setOnlinePlayers(String onlinePlayers) {
+	public void setOnlinePlayers(int onlinePlayers) {
 		this.onlinePlayers = onlinePlayers;
 	}
 	/**
 	 * Getter for maxPlayers.
 	 * @return Gets maxPlayers.
 	 */
-	public String getMaxPlayers() {
+	public int getMaxPlayers() {
 		return maxPlayers;
 	}
 	/**
 	 * Setter for ${bare_field_name}.
 	 * @param Set maxPlayers to maxPlayers.
 	 */
-	public void setMaxPlayers(String maxPlayers) {
+	public void setMaxPlayers(int maxPlayers) {
 		this.maxPlayers = maxPlayers;
 	}
 	/**

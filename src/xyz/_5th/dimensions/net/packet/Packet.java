@@ -10,7 +10,7 @@ public abstract class Packet {
 
     public void write(ByteBuf out) throws Exception {}
 
-    public abstract void handle(PacketHandler handler);
+    public abstract void handle(PacketManager handler);
 
     public String toString() {
         StringBuilder s = new StringBuilder();

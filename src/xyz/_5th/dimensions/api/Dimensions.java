@@ -18,15 +18,14 @@ import xyz._5th.dimensions.api.world.WorldManager;
  */
 public abstract class Dimensions {
 	
-	public static final String VERSION_NAME = "1.8";
-	public static final int[] PROTOCOL_VERSIONS = {4, 5, 47};
+	public static String VERSION_NAME = "1.8";
+	public static int[] PROTOCOL_VERSIONS = {4, 5, 47};
 	
 	public static Dimensions dimensions;
 	
 	public static void setServer(Dimensions instance){
-		if(dimensions != null){
+		if(dimensions != null)
 			throw new RuntimeException("Server already exists");
-		}
 		dimensions = instance;
 	}
 	
