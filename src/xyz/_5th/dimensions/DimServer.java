@@ -14,6 +14,7 @@ import xyz._5th.dimensions.api.cmd.CommandRegistry;
 import xyz._5th.dimensions.api.event.EventFactory;
 import xyz._5th.dimensions.net.NetManager;
 import xyz._5th.dimensions.net.packet.Packet;
+import xyz._5th.dimensions.net.packet.play.PlayChatPacket;
 
 /**
  * Project: Dimensions
