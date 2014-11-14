@@ -20,6 +20,7 @@ import xyz._5th.dimensions.net.packet.ping.Ping1PingPacket;
 import xyz._5th.dimensions.net.packet.play.Play0KeepAlivePacket;
 import xyz._5th.dimensions.net.packet.play.Play10AnimationPacket;
 import xyz._5th.dimensions.net.packet.play.Play11EntityActionPacket;
+import xyz._5th.dimensions.net.packet.play.PlayChatPacket;
 
 /**
  * Project: Dimensions
@@ -86,6 +87,10 @@ public class PacketManager {
 	}
 	
 	public void entityAction(Play11EntityActionPacket packet){
+		
+	}
+
+	public void chat(PlayChatPacket packet) {
 		
 	}
 }

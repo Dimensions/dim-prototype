@@ -14,6 +14,7 @@ import xyz._5th.dimensions.net.PacketConstants;
 import xyz._5th.dimensions.net.PacketState;
 import xyz._5th.dimensions.net.packet.Packet;
 import xyz._5th.dimensions.net.packet.PacketManager;
+import xyz._5th.dimensions.net.packet.play.Play38ChunkBulkPacket;
 
 /**
  * Project: Dimensions
@@ -33,7 +34,7 @@ public class PacketCodec {
 
 	protected void encode(ChannelHandlerContext c, Packet p, ByteBuf b)
 			throws Exception {
-		if (p instanceof /* PACKET38CHUNKBULK */Object)
+		if (p instanceof Play38ChunkBulkPacket)
 			System.out.println(p.toString());
 		p.write(b);
 	}
