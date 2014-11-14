@@ -339,5 +339,13 @@ public class DimPlayer implements Player {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	/**
+	 * 
+	 */
+	public void playerDisconnected() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }

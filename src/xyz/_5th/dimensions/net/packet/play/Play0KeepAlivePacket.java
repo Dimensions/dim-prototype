@@ -21,6 +21,8 @@ public class Play0KeepAlivePacket extends Packet {
 	
 	public int id;
 	
+	public Play0KeepAlivePacket(){}
+	
 	public Play0KeepAlivePacket(int id){
 		this.id = id;
 	}
