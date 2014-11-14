@@ -16,6 +16,10 @@ import xyz._5th.dimensions.net.packet.handshake.Handshake0HandshakePacket;
 import xyz._5th.dimensions.net.packet.login.Login0LoginStartPacket;
 import xyz._5th.dimensions.net.packet.login.Login1EncryptionPacket;
 import xyz._5th.dimensions.net.packet.ping.Ping0StatusPacket;
+import xyz._5th.dimensions.net.packet.ping.Ping1PingPacket;
+import xyz._5th.dimensions.net.packet.play.Play0KeepAlivePacket;
+import xyz._5th.dimensions.net.packet.play.Play10AnimationPacket;
+import xyz._5th.dimensions.net.packet.play.Play11EntityActionPacket;
 
 /**
  * Project: Dimensions
@@ -67,5 +71,21 @@ public class PacketManager {
 	
 	public void statusRequest(Ping0StatusPacket packet) {
 			
+	}
+
+	public void ping(Ping1PingPacket packet) {
+		
+	}
+
+	public void keepAlive(Play0KeepAlivePacket packet) {
+		
+	}
+
+	public void playAnimation(Play10AnimationPacket packet) {
+		
+	}
+	
+	public void entityAction(Play11EntityActionPacket packet){
+		
 	}
 }
