@@ -5,7 +5,7 @@ A Minecraft Server implementation and API to surpass them all!
 
 This is a new Minecraft Server that will allow more customization compared to the average server, such as modifiable Online & Max Player Counts, fireable Packets that can be accessed form anywhere, allowing multiple versions to connect, and a Plugin API!
 
-[http://www.planetminecraft.com/forums/dimensions-new-server-mod-rule-them-all-t452434.html](PMC Post)
+[PMC Post](http://www.planetminecraft.com/forums/dimensions-new-server-mod-rule-them-all-t452434.html)
 
 Features
 --------
